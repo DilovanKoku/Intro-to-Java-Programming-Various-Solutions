@@ -16,13 +16,13 @@ public class Chapter4Question2 {
         double y2 = input.nextDouble();
 
         //Conversion from degrees to radians
-        double x1ToRAd = Math.toRadians(x1);
+        double x1ToRad = Math.toRadians(x1);
         double y1ToRad = Math.toRadians(y1);
         double x2ToRad = Math.toRadians(x2);
         double y2ToRad = Math.toRadians(y2);
 
         //great circle distance formula
-        double d = radius * Math.acos((Math.sin(x1ToRAd) * Math.sin(x2ToRad)) + (Math.cos(x1ToRAd) * Math.cos(x2ToRad) * Math.cos(y1ToRad - y2ToRad)));
+        double d = radius * Math.acos((Math.sin(x1ToRad) * Math.sin(x2ToRad)) + (Math.cos(x1ToRad) * Math.cos(x2ToRad) * Math.cos(y1ToRad - y2ToRad)));
 
         //Display solution
         System.out.println("The distance between the two points is " + d + " km");
